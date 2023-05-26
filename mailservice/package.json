@@ -1,0 +1,48 @@
+{
+    "name": "mailservice",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^6",
+        "@sap/hdi": "^4.4.0",
+        "@sap/xsenv": "^3.4.0",
+        "@sap/xssec": "^3.2.17",
+        "@sapmentors/cds-scp-api": "^1.0.4",
+        "axios": "^1.4.0",
+        "cfenv": "^1.2.4",
+        "express": "^4.18.2",
+        "hdb": "^0.19.5",
+        "passport": "^0.6.0",
+        "sap-cf-axios": "^0.4.8",
+        "wildcard-match": "^5.1.2"
+    },
+    "scripts": {
+        "start": "cds run",
+        "watch-mailserviceui": "cds watch --open mailserviceui/webapp/index.html?sap-ui-xx-viewCache=false",
+        "undeploy": "cf undeploy mailservice --delete-services --delete-service-keys --delete-service-brokers",
+        "build": "rimraf resources mta_archives && mbt build --mtar archive",
+        "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+        "watch-whitelistui": "cds watch --open whitelistui/webapp/index.html?sap-ui-xx-viewCache=false"
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "hana-cloud"
+            },
+            "hana": {
+                "deploy-format": "hdbtable"
+            }
+        }
+    },
+    "sapux": [
+        "app/mailserviceui",
+        "app/whitelistui"
+    ],
+    "devDependencies": {
+        "@sap/ux-specification": "^1.108.5",
+        "rimraf": "^3.0.2"
+    }
+}

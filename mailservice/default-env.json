@@ -1,0 +1,40 @@
+{
+    "VCAP_SERVICES": {
+
+        
+            "destination": [
+                {
+                    "name": "destservicemsgraph",
+                    "instance_name": "destservicemsgraph",
+                    "label": "destination",
+                    "tags": [
+                        "destination",
+                        "conn",
+                        "connsvc",
+                        "endpoint:https://api.cf.us10-001.hana.ondemand.com",
+                        "org:d5bbcca0trial",
+                        "space:dev"
+                    ],
+                    "plan": "lite",
+                    "credentials": {
+                        "clientid": "sb-clonef5d3b64eb97f49d9a878629874c37de9!b119747|destination-xsappname!b62",
+                        "clientsecret": "195ec5bd-2634-4c87-abc6-123f57d8bdf0$A3FcPEyiSPsZ_17s25E5BuUfJ3rnb_srA60CKQ_OIPs=",
+                        "credential-type": "binding-secret",
+                        "identityzone": "d5bbcca0trial",
+                        "instanceid": "f5d3b64e-b97f-49d9-a878-629874c37de9",
+                        "service_key_name": "key",
+                        "tenantid": "0a39c33b-3802-46f9-a040-d37a12d86324",
+                        "tenantmode": "dedicated",
+                        "uaadomain": "authentication.us10.hana.ondemand.com",
+                        "uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+                        "url": "https://d5bbcca0trial.authentication.us10.hana.ondemand.com",
+                        "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlVD6LISoIStYkJ6DvHtp\n4S57wXo+2qtxJR8Y/swQa6EqTdOce12kOWEXofjSfC/1P0ElMS3HmC+NdbltUm5+\nFytgE/nNzmuPzXi7jpnuFF3+FrEFDtN/h4kFEZZ8itBqkiNVOj8SydG5U+0+2cCa\nrKhM4jVV7ng0Ft1WLv4uTKdWVifZzLT5GRZzaBzRgpZ4+T6eq6ECHR7R8pStw1wz\nx6hI4bD5L4D3VqQV7jhleedVx3Dxc1Icq3vi1plVcBVQYICFUNPwc++gwLRA1elF\nc33W5SAoYQyJs/iC5Gb87scoqoNXXoFlyE4CN1YxGCa1lLTzHdadfV7bEibCtyLv\nKQIDAQAB\n-----END PUBLIC KEY-----",
+                        "xsappname": "clonef5d3b64eb97f49d9a878629874c37de9!b119747|destination-xsappname!b62"
+                    }
+                }
+            
+        ]
+    }
+
+
+}
